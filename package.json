@@ -1,0 +1,33 @@
+{
+  "name": "freecodecamp-graphql",
+  "version": "0.0.1",
+  "description": "freeCodeCamp GraphQL-Tutorial",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DemonsGalore/freeCodeCamp-GraphQL.git"
+  },
+  "keywords": [
+    "GraphQL",
+    "React",
+    "Apollo"
+  ],
+  "author": "Andreas Stopat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DemonsGalore/freeCodeCamp-GraphQL/issues"
+  },
+  "homepage": "https://github.com/DemonsGalore/freeCodeCamp-GraphQL#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
