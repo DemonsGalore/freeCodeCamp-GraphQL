@@ -1,9 +1,12 @@
-import React, { Fragment } from 'react';
+import React, { useState, Fragment } from 'react';
 import { Query } from 'react-apollo';
+
+import BookDetails from './BookDetails';
 
 import { GET_BOOKS_QUERY } from '../queries/queries';
 
 const BookList = props => {
+  const [selectedBook, setSelectedBook] = useState(null);
 
   return (
     <Fragment>
@@ -16,13 +19,14 @@ const BookList = props => {
             return <ul>
               {
                 data.books.map(book => (
-                  <li key={book.id}>{book.name}</li>
+                  <li key={book.id} onClick={e => setSelectedBook(book.id)}>{book.name}</li>
                 ))
               }
             </ul>;
           }
         }
       </Query>
+      <BookDetails bookId={selectedBook}/>
     </Fragment>
   );
 };

@@ -29,7 +29,10 @@ const AddBook = props => {
             noValidate
             onSubmit={e => {
               e.preventDefault();
-              addBook({ variables: { authorId, name: bookName, genre } });
+              addBook({
+                variables: { authorId, name: bookName, genre },
+                refetchQueries:['BooksQuery']
+              });
             }}
           >
             <div className="input-group">
