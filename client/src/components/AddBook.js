@@ -60,7 +60,7 @@ const AddBook = props => {
                 {authorsContent}
               </select>
             </div>
-            <button type="submit">+</button>
+            <button type="submit"><i className="fas fa-plus fa-2x"></i></button>
           </form>
         )
       }

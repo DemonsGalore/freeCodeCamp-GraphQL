@@ -16,7 +16,7 @@ const BookList = props => {
           ({ loading, error, data }) => {
             if (loading) return <h4>Loading...</h4>;
             if (error) console.log(error);
-            return <ul>
+            return <ul id="book_list">
               {
                 data.books.map(book => (
                   <li key={book.id} onClick={e => setSelectedBook(book.id)}>{book.name}</li>

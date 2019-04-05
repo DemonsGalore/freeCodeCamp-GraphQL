@@ -1,0 +1,83 @@
+body{
+  font-family: 'Lato';
+}
+
+main h1 {
+  text-align: center;
+}
+
+main {
+  padding: 0 2rem;
+  box-sizing: border-box;
+  width: 60%;
+  height: 100%;
+}
+
+#book_list{
+  padding: 0;
+}
+
+#book_list li {
+  display: inline-block;
+  margin: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--primary);
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+  cursor: pointer;
+  color: var(--primary);
+}
+
+form {
+  background: #fff;
+  padding: 1rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 22rem;
+}
+
+form .field {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.5rem;
+}
+
+form label {
+  text-align: right;
+  padding: 6px;
+}
+
+form input, form select {
+  margin: 4px 0;
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+form button {
+  width: 3rem;
+  height: 3rem;
+  color: #fff;
+  background: var(--primary);
+  border: 0;
+  padding: 0 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  bottom: 1rem;
+  left: 20rem;
+}
+
+#book_details {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background: var(--primary);
+  padding: 30px;
+  overflow: auto;
+  box-shadow: -2px -3px 5px rgba(0,0,0,0.3);
+  box-sizing: border-box;
+  color: #fff;
+}

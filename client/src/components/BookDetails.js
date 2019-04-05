@@ -8,11 +8,11 @@ const BookDetails = props => {
   return(
     <Fragment>
       { bookId !== null ? (
-        <div id="book-details">
+        <div id="book_details">
           <Query query={GET_BOOK_QUERY} variables={{ id: bookId }}>
             {
               ({ loading, error, data }) => {
-                if (loading) return <h4>Loading...</h4>;
+                if (loading) return <h4>Loading</h4>;
                 if (error) console.log(error);
                 const { name, genre, author } = data.book;
 

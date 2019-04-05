@@ -15,13 +15,10 @@ const client = new ApolloClient({
 const App = props => {
   return (
     <ApolloProvider client={client}>
-      <div className="App">
-        <main>
-          <h1>HELLO</h1>
-          <BookList />
-          <AddBook />
-        </main>
-      </div>
+      <main>
+        <BookList />
+        <AddBook />
+      </main>
     </ApolloProvider>
   );
 }
